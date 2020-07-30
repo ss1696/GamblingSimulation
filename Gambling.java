@@ -1,7 +1,7 @@
 
 public class Gambling{
 	
-	// Initializing the Constant & Variables...
+	// Initializing the Constants & Variables...
 	final int Stake = 100;
 	final int Bet = 1;
 	final int NoOfDayInMonth = 30;
