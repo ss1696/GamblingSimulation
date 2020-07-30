@@ -25,7 +25,7 @@ public class Gambling{
 		}
 	}
 	
-	//This method is used to display total amount won & loose for each days after 20th day in a month..
+	//This method is used to display total amount won or lost for each days in a month..
 	private void monthPlay() {
 		int MaxWinAmout = Stake + (Stake*50/100);
 		int MaxLoseAmount = Stake -(Stake*50/100);
@@ -40,14 +40,12 @@ public class Gambling{
 			
 			if(dayWinAmt > dayLossAmt) {
 				totalcashAmtWon = totalcashAmtWon + (dayWinAmt - dayLossAmt);
+				System.out.println("Total Amount Won at day"+i+" "+totalcashAmtWon);
 			}
 			else {
 				totalcashAmtLost = totalcashAmtLost + (dayLossAmt - dayWinAmt);
-			}
-			if(i>=20) {
-				System.out.println("Total Amount Won at day"+i+" "+totalcashAmtWon);
 				System.out.println("Total Amount Lost at day"+i+" "+totalcashAmtLost);
-			}	
+			}
 		}	
 	}
 	
