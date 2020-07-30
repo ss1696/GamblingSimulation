@@ -1,9 +1,9 @@
 public class Gambling{
 	
-	// Initialize the Varible ...
+	// Initializing the Varible ...
 
-	static int stake = 100;
-	final static int bet = 1;
+	final static int Stake = 100;
+	final static int Bet = 1;
 
 	
 	public static void main(){
