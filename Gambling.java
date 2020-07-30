@@ -12,6 +12,7 @@ public class Gambling{
 		gambler.winOrLoss();
 	}
 
+	//This function return true(Win) when probability is less then 0.5 else return false(loss) and update the Stake with bet value
 	static boolean winOrLoss(){
 		
 		numberOfGames++;
