@@ -1,12 +1,28 @@
 public class Gambling{
 	
 	// Initializing the Varible ...
-
+	//CONSTANT
 	final static int Stake = 100;
 	final static int Bet = 1;
-
 	
-	public static void main(){
+	int numberOfGames=0;
+	
+	public static void main(String[] args){
+		Gambling gambler = new Gambler();
+		gambler.winOrLose();
+	}
 
+	static boolean winOrLoss(){
+		
+		numberOfGames++;
+		if(Math.random()<0.5){
+			System.out.println("You won!!");
+			Stake+=Bet;
+			return true;
+		}else{
+			System.out.println("You Loose!!");
+			Stake-=Bet;
+			return false;
+		}
 	}
 }
