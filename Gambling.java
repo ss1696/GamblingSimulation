@@ -29,8 +29,8 @@ public class Gambling{
 	private void monthPlay() {
 		int MaxWinAmout = Stake + (Stake*50/100);
 		int MaxLoseAmount = Stake -(Stake*50/100);
-		
-		for(int i=1; i<=NoOfDayInMonth; i++) {
+		int i = 1;		
+		while(i<=NoOfDayInMonth) {
 			cash = Stake;
 			numberOfGames = 0;dayWinAmt = 0;dayLossAmt = 0;
 			while(cash>MaxLoseAmount && cash<MaxWinAmout) {
@@ -46,6 +46,7 @@ public class Gambling{
 				totalcashAmtLost = totalcashAmtLost + (dayLossAmt - dayWinAmt);
 				System.out.println("Total Amount Lost at day"+i+" "+totalcashAmtLost);
 			}
+			i++;
 		}	
 	}
 	
