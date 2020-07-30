@@ -1,10 +1,8 @@
 public class Gambling{
 	
 	// Initializing the Varible ...
-	//CONSTANT
 	static int Stake = 100;
 	final static int Bet = 1;
-	
 	static int numberOfGames=0;
 	
 	public static void main(String[] args){
