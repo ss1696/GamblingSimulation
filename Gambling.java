@@ -5,7 +5,7 @@ public class Gambling{
 	static int Stake = 100;
 	final static int Bet = 1;
 	
-	int numberOfGames=0;
+	static int numberOfGames=0;
 	
 	public static void main(String[] args){
 		Gambling gambler = new Gambling();
