@@ -8,7 +8,7 @@ public class Gambling{
 	int numberOfGames=0;
 	
 	public static void main(String[] args){
-		Gambling gambler = new Gambler();
+		Gambling gambler = new Gambling();
 		gambler.winOrLoss();
 	}
 
