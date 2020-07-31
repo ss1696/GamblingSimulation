@@ -1,6 +1,8 @@
 import java.util.Collections;
 import java.util.HashMap;
-import java.util.Map.Entry;;
+import java.util.Map.Entry;
+import java.util.Scanner;
+
 public class Gambling{
 	
 	// Initializing the Constants & Variables...
@@ -9,6 +11,7 @@ public class Gambling{
 	final int NoOfDayInMonth = 30;
 	int numberOfGames, dayWinAmt, dayLossAmt,cash;
 	int totalcashAmtWon, totalcashAmtLost;
+	static int winCount;
 	float winPercentage, loosePercentage;
 	HashMap<Integer,Float> win = new HashMap<Integer,Float>();
 	HashMap<Integer,Float> loss = new HashMap<Integer,Float>();
@@ -71,6 +74,31 @@ public class Gambling{
 				System.out.println("The UnLuckiest Day of the Gambler is "+entry.getKey());     
 			}
 		}
+		toPlayAgain();
+	}
+	
+	static void toPlayAgain() {
+		
+		if(winCount > 15) {
+			System.out.println("Congrats!! You Win the game for this Month. \n Do you Want to Play Again..\n Enter your choice 1)Yes 2)No ");
+			Scanner sc = new Scanner(System.in);
+			int choice = sc.nextInt();
+			
+			switch(choice) {
+				case 1: 
+					main(null);
+					break ;
+				case 2:
+					System.out.println("Thankyou for Playing. Hope You Enjoyed the Game. Please Come Again");
+					break ;
+				default :
+					System.out.println("Enter a Valid Choice.. You have enter a wrong choice.");
+			}
+			sc.close();
+		}else {
+			System.out.println("Sorry!! You Lost the game for this Month.");
+		}
+
 	}
 	
 }
