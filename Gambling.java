@@ -76,11 +76,12 @@ public class Gambling{
 		}
 		toPlayAgain();
 	}
-	
+
+	//This method check whether gambler win for this month or not and if gambler win than it will asked to him whether he want to play for another month
 	static void toPlayAgain() {
 		
 		if(winCount > 15) {
-			System.out.println("Congrats!! You Win the game for this Month. \n Do you Want to Play Again..\n Enter your choice 1)Yes 2)No ");
+			System.out.println("Congrats!! You Win the game for this Month. \n Do you Want to Play Again for another month..\n Enter your choice 1)Yes 2)No ");
 			Scanner sc = new Scanner(System.in);
 			int choice = sc.nextInt();
 			
